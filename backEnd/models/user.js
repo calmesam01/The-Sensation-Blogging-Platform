@@ -51,6 +51,7 @@ const userSchema = new mongoose.Schema({
     }
 }, {timestamps: true})
 
+//User schema virtual fields and methods for password hashing
 userSchema
     .virtual('password')
     .set(function (password) {
@@ -66,10 +67,11 @@ userSchema
     })
 
     userSchema.methods = {
+        //Return true if both the passwords match
         authenticate: function (plainText) {
             return this.encryptPassword(plainText) === this.hashed_password
         },
-
+        //Encrypt the password using sha1 algorithm and salt (from makeSalt method) as the key
         encryptPassword: function (password) {
             if (!password) {
                 return '';
@@ -84,6 +86,7 @@ userSchema
             }
         },
 
+        //generate salt
         makeSalt: function () {
             return Math.round(new Date().valueOf() * Math.random()) + '';
         }
