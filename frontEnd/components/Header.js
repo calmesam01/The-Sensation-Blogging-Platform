@@ -37,15 +37,31 @@ const Header = () => {
               <React.Fragment>
                 <NavItem>
                   <Link href="/signin">
-                    <NavLink>Signin</NavLink>
+                    <NavLink style={{ cursor: 'pointer' }}>Signin</NavLink>
                   </Link>
                 </NavItem>
                 <NavItem>
                   <Link href="/signup">
-                    <NavLink>Signup</NavLink>
+                    <NavLink style={{ cursor: 'pointer' }}>Signup</NavLink>
                   </Link>
                 </NavItem>
               </React.Fragment>
+            )}
+
+            {isAuth() && isAuth().role === 0 && (
+              <NavItem>
+                <Link href="/user">
+                  <NavLink style={{ cursor: 'pointer' }}>{`${isAuth().name}'s Dashboard`}</NavLink>
+                </Link>
+              </NavItem>
+            )}
+
+            {isAuth() && isAuth().role === 1 && (
+              <NavItem>
+                <Link href="/admin">
+                  <NavLink style={{ cursor: 'pointer' }}>{`${isAuth().name}'s Dashboard`}</NavLink>
+                </Link>
+              </NavItem>
             )}
 
             {isAuth() && (
