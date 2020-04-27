@@ -118,9 +118,10 @@ const Tag = () => {
 
     return (
         <React.Fragment>
+            {showRemoved()}
             {showSuccess()}
             {showError()}
-            {showRemoved()}
+            
             <div onMouseMove={mouseMoveHandler}>
                 {newTagFom()}
                 {showTags()}
