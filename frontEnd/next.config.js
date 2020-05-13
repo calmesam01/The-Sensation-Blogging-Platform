@@ -9,6 +9,6 @@ module.exports = withCSS({
 	    DOMAIN_DEVELOPMENT: 'https://localhost:3000',
 	    DOMAIN_PRODUCTION: 'https://sensation-blog.tech',
         FB_APP_ID: '2456435663434',
-        DISQUS_SHORTNAME = 'sensation-blog'
+        //DISQUS_SHORTNAME = 'sensation-blog'
     }
 })
