@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 const SignupComponent = () => {
     const [values, setValues] = useState({
-        name: 'Sam',
-        email: 'sam@gmail.com',
-        password: '123456',
+        name: '',
+        email: '',
+        password: '',
         error: '',
         loading: false,
         message: '',
