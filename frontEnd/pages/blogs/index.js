@@ -10,16 +10,16 @@ import { API, DOMAIN, APP_NAME, FB_APP_ID } from '../../config';
 const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, blogSkip, router }) => {
     const head = () => (
         <Head>
-            <title>Programming blogs | {APP_NAME}</title>
+            <title>{APP_NAME}</title>
             <meta
                 name="description"
-                content="Programming blogs and tutorials on react node next vue php laravel and web developoment"
+                content="Multi-User Blogging Platform"
             />
             <link rel="canonical" href={`${DOMAIN}${router.pathname}`} />
-            <meta property="og:title" content={`Latest web developoment tutorials | ${APP_NAME}`} />
+            <meta property="og:title" content={`sensation blog | ${APP_NAME}`} />
             <meta
                 property="og:description"
-                content="Programming blogs and tutorials on react node next vue php laravel and web developoment"
+                content="Latest blogs on sensation-blog.tk"
             />
             <meta property="og:type" content="webiste" />
             <meta property="og:url" content={`${DOMAIN}${router.pathname}`} />
@@ -106,7 +106,7 @@ const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, blogSkip, rout
                         <header>
                             <div className="col-md-12 pt-3">
                                 <h1 className="display-4 font-weight-bold text-center">
-                                    Programming blogs and tutorials
+                                    Blog about business, tech, travel and more!
                                 </h1>
                             </div>
                             <section>
