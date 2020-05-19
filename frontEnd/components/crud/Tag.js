@@ -59,7 +59,7 @@ const Tag = () => {
             if (data.error) {
                 console.log(data.error);
             } else {
-                setValues({ ...values, error: false, success: true, name: '', removed: !removed, reload: !reload });
+                setValues({ ...values, error: false, success: false, name: '', removed: !removed, reload: !reload });
             }
         });
     };
@@ -71,7 +71,7 @@ const Tag = () => {
             if (data.error) {
                 setValues({ ...values, error: data.error, success: false });
             } else {
-                setValues({ ...values, error: false, success: false, name: '', removed: !removed, reload: !reload });
+                setValues({ ...values, error: false, success: true, name: '', removed: false, reload: false });
             }
         });
     };
