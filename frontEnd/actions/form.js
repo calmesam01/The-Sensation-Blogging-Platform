@@ -13,7 +13,7 @@ export const emailContactForm = data => {
     return fetch(`${emailEndpoint}`, {
         method: 'POST',
         headers: {
-            Accept: 'application/json',
+            'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)

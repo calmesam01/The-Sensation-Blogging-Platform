@@ -149,8 +149,8 @@ exports.forgotPassword = (req, res) => {
             <p>Please use the following link to reset your password:</p>
             <p>${process.env.CLIENT_URL}/auth/password/reset/${token}</p>
             <hr />
-            <p>This email may contain sensetive information</p>
-            <p>https://seoblog.com</p>
+            <p>This email may contain sensitive information</p>
+            <p>https://sensation-blog.tk</p>
         `
         };
         // populating the db > user > resetPasswordLink
