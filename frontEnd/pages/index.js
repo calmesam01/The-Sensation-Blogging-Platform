@@ -34,7 +34,7 @@ const Index = () => {
                                     style={{
                                         backgroundImage:
                                             'url(' +
-                                            'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg' +
+                                            'https://images.pexels.com/photos/834949/pexels-photo-834949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' +
                                             ')'
                                     }}
                                 >
@@ -58,7 +58,7 @@ const Index = () => {
                                     style={{
                                         backgroundImage:
                                             'url(' +
-                                            'https://images.pexels.com/photos/3163804/pexels-photo-3163804.jpeg' +
+                                            'https://images.pexels.com/photos/1004584/pexels-photo-1004584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' +
                                             ')'
                                     }}
                                 >
@@ -84,7 +84,7 @@ const Index = () => {
                                     style={{
                                         backgroundImage:
                                             'url(' +
-                                            'https://images.pexels.com/photos/590014/pexels-photo-590014.jpeg' +
+                                            'https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' +
                                             ')'
                                     }}
                                 >
