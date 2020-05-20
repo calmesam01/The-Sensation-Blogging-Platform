@@ -6,7 +6,8 @@ const expressJwt = require('express-jwt');
 const { errorHandler } = require('../helpers/dbErrorHandler');
 const _ = require('lodash');
 // sendgrid
-
+const sgMail = require('@sendgrid/mail'); // SENDGRID_API_KEY
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 exports.signup = (req, res) => {
     // console.log(req.body);
